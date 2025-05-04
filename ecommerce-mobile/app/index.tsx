@@ -8,10 +8,8 @@ import {
 
 export default function HomeScreen() {
   return (
-    <Button>
-      <ButtonText variant="solid">
-        Press Me
-      </ButtonText>
+    <Button variant="outline">
+      <ButtonText>Press Me</ButtonText>
     </Button>
     // <FlatList
     //   data={products}
