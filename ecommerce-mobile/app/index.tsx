@@ -8,14 +8,14 @@ import {
 
 export default function HomeScreen() {
   return (
-    <Button variant="outline">
-      <ButtonText>Press Me</ButtonText>
-    </Button>
-    // <FlatList
-    //   data={products}
-    //   renderItem={({ item }) => (
-    //     <ProductListItem product={item} />
-    //   )}
-    // ></FlatList>
+    <FlatList
+      data={products}
+      numColumns={2}
+      contentContainerClassName="gap-2"
+      columnWrapperClassName="gap-2"
+      renderItem={({ item }) => (
+        <ProductListItem product={item} />
+      )}
+    ></FlatList>
   );
 }
